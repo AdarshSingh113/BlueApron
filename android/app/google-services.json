@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "468603676054",
+    "project_id": "yolo-64a72",
+    "storage_bucket": "yolo-64a72.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:468603676054:android:16bc6895c647f936dda9b7",
+        "android_client_info": {
+          "package_name": "com.roomsmoker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUwJO7rQoPOuppI6x36HJEjMmEa3_sjLs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
