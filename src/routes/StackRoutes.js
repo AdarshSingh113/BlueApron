@@ -22,9 +22,9 @@ const StackRoutes = () => {
       screenOptions={{
         headerShown: false,
       }}>
+      <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="ViewDetails" component={ViewDetails} />
       <Stack.Screen name="VideoPlayer" component={VideoPlayer} />
-      <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="Detail" component={Detail} />
       <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="Store" component={Store} />

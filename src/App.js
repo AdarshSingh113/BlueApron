@@ -4,8 +4,11 @@ import {useEffect} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import StackRoutes from './routes/StackRoutes';
 import messaging from '@react-native-firebase/messaging';
+import {createDrawerNavigator} from '@react-navigation/drawer';
+import DrawerRoute from './routes/Drawer';
 
 const App = () => {
+  const Drawer = createDrawerNavigator();
   const navigationRef = useRef();
   const requestUserPermission = async () => {
     await messaging().registerDeviceForRemoteMessages();
@@ -73,7 +76,7 @@ const App = () => {
         console.log('....................');
       }}
       ref={navigationRef}>
-      <StackRoutes />
+      <DrawerRoute />
     </NavigationContainer>
   );
 };

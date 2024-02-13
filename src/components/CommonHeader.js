@@ -14,6 +14,9 @@ const CommonHeader = ({
   arrow = true,
   subscription = false,
 }) => {
+  const toggleDrawer = () => {
+    navigation.toggleDrawer(); // Toggle the drawer visibility
+  };
   return (
     <React.Fragment>
       <StatusBar backgroundColor="black" barStyle="light-content" />
@@ -26,6 +29,12 @@ const CommonHeader = ({
             />
           </TouchableOpacity>
         )}
+        <TouchableOpacity onPress={toggleDrawer}>
+          <Image
+            style={styles.image}
+            source={require('../assets/image/bars.png')}
+          />
+        </TouchableOpacity>
         <Text
           style={{
             fontSize: 25,

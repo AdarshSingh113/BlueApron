@@ -266,7 +266,7 @@ const Faq = () => {
                   height: 30,
                   width: 130,
                   backgroundColor:
-                    selectedCategory.name == item.name
+                    selectedCategory?.name == item?.name
                       ? 'rgba(0, 0, 0, 0.2)'
                       : 'white',
                   marginHorizontal: 8,
@@ -274,7 +274,7 @@ const Faq = () => {
                   justifyContent: 'center',
                 }}
                 onPress={() => setSelectedCategory(item)}>
-                <Text>{item.name}</Text>
+                <Text>{item?.name}</Text>
               </TouchableOpacity>
             )}
           />

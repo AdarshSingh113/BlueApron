@@ -45,14 +45,7 @@ const Login = ({navigation, route}) => {
           />
         </View>
         <Pressable
-          style={[
-            styles.button,
-            // {
-            //   borderWidth: buttonStyle ? 0 : 2,
-            //   borderColor: buttonStyle ? 'red' : 'black',
-            //   elevation: buttonStyle ? 0 : 10,
-            // },
-          ]}
+          style={[styles.button]}
           onPressIn={() => {
             setbuttonStyle(true);
           }}

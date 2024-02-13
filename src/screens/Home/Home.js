@@ -9,13 +9,17 @@ import {
   Image,
   ActivityIndicator,
   TextInput,
+  Modal,
+  Pressable,
 } from 'react-native';
 import {FlatList, TouchableOpacity} from 'react-native-gesture-handler';
 import {useDispatch, useSelector} from 'react-redux';
 import {getPaginatedData} from '../../store/newsSlice';
 import Card from './components/Card';
+
 import {Colors} from '../../styles/Colors';
 import CommonHeader from '../../components/CommonHeader';
+import ViewDetails from '../ViewDetails/ViewDetails';
 
 const Home = ({navigation}) => {
   const newsData = useSelector(state => state.newsSlice.newsData);
